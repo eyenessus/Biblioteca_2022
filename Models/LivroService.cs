@@ -22,7 +22,8 @@ namespace Biblioteca.Models
                 Livro livro = bc.Livros.Find(l.Id);
                 livro.Autor = l.Autor;
                 livro.Titulo = l.Titulo;
-
+                //faltou o metodo ano aqui por isso o ano não estava sendo adcionado 
+                livro.Ano = l.Ano;
                 bc.SaveChanges();
             }
         }

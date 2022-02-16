@@ -50,7 +50,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "3.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/_._": {}
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {}
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {}
@@ -851,11 +851,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Biblioteca.csproj",
+      "projectUniqueName": "c:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Biblioteca.csproj",
       "projectName": "Biblioteca",
-      "projectPath": "C:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Biblioteca.csproj",
+      "projectPath": "c:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Biblioteca.csproj",
       "packagesPath": "C:\\Users\\nessu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\obj\\",
+      "outputPath": "c:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -889,8 +889,6 @@
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
             "target": "Package",
             "version": "[3.0.0, )"
           },
