@@ -14407,6 +14407,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuario\\ListaDeUsuario.cshtml",
+      "TargetPath": "Views\\Usuario\\ListaDeUsuario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Emprestimo\\Listagem.cshtml",
       "TargetPath": "Views\\Emprestimo\\Listagem.cshtml",
       "FileKind": "mvc"
@@ -14447,6 +14452,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuario\\RegistrarUsuarioS.cshtml",
+      "TargetPath": "Views\\Usuario\\RegistrarUsuarioS.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Livro\\_FormCadastro.cshtml",
       "TargetPath": "Views\\Livro\\_FormCadastro.cshtml",
       "FileKind": "mvc"
@@ -14474,6 +14484,11 @@
     {
       "FilePath": "c:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Emprestimo\\Cadastro.cshtml",
       "TargetPath": "Views\\Emprestimo\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuario\\EditarUsuario.cshtml",
+      "TargetPath": "Views\\Usuario\\EditarUsuario.cshtml",
       "FileKind": "mvc"
     }
   ],
