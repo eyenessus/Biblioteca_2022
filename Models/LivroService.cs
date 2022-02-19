@@ -24,6 +24,7 @@ namespace Biblioteca.Models
                 livro.Titulo = l.Titulo;
                 //faltou o metodo ano aqui por isso o ano não estava sendo adcionado 
                 livro.Ano = l.Ano;
+                //foi adiconado o metodo para poder aparecer o ano não estava
                 bc.SaveChanges();
             }
         }
