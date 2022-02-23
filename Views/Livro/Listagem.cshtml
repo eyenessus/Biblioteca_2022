@@ -7,11 +7,23 @@
 
     int PaginaAtual = Int32.Parse(ViewData["PaginaAtual"].ToString());
 
-    int NumLivrosPorPag = (Model.Count < FiltroPorPag ? Model.Count : FiltroPorPag);
+    //int NumLivrosPorPag = (Model.Count < FiltroPorPag ? Model.Count : FiltroPorPag);
 
-   int NumTotalDePag = Model.Count/NumLivrosPorPag + (Model.Count%NumLivrosPorPag == 0 ? 0 : 1);
+   //int NumTotalDePag = Model.Count/NumLivrosPorPag + (Model.Count%NumLivrosPorPag == 0 ? 0 : 1);
+
+    int NumLivrosPorPag = Model.Count;
+    int NumTotalDePag = 1;
+
+    if(Model.Count > 0)
+{
+	NumLivrosPorPag = (Model.Count < FiltroPorPag ? Model.Count : FiltroPorPag);
+
+	NumTotalDePag = Model.Count/NumLivrosPorPag + (Model.Count%NumLivrosPorPag == 0 ? 0 : 1);
+}
 
 }
+
+
 
 
 <div class="row">
@@ -56,12 +68,21 @@
     </div>
 </div>
 
- <div id="SeletorPaginas">
+ <!--  <div id="SeletorPaginas">
                 <span>Página:</span>
-                @for(int i=1; i <=NumTotalDePag; i++) {
+                @for(int i=1; i <=NumLivrosPorPag; i++) {
                     <span><a href="/Livro/Listagem?PaginaAtual=@i"></a></span>
                 }
             </div>
+            -->
+
+      <div id="SeletorPaginas">
+                <span>Página:</span>
+                @for(int i=1; i <=NumLivrosPorPag; i++) {
+                    <span><a href="/Livro/Listagem?PaginaAtual=@i">@i</a></span>
+                }
+            </div>
+        
 
 <div class="row">
     <div class="col-md-12">
