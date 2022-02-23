@@ -9,6 +9,7 @@ namespace Biblioteca.Controllers
     public class UsuarioController: Controller
     {
         public IActionResult ListaDeUsuario(){
+            Autenticacao.CheckLogin(this);
             List<Usuario> usuarioN = new UsuarioService().ListarTodos();
             return View(usuarioN);
         }
