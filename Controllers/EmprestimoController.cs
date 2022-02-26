@@ -37,7 +37,7 @@ namespace Biblioteca.Controllers
             return RedirectToAction("Listagem");
         }
 
-        public IActionResult Listagem(string tipoFiltro, string filtro, string itensPorPagina, int NumDaPagina, int PaginaAtual)
+        public IActionResult Listagem(string tipoFiltro, string filtro, string  itensPorPagina, int numDapagina, int PaginaAtual)
         {
             Autenticacao.CheckLogin(this);
             FiltrosEmprestimos objFiltro = null;
@@ -51,7 +51,7 @@ namespace Biblioteca.Controllers
 
 
 
-            ViewData["empPorPagina"]=(string.IsNullOrEmpty(itensPorPagina)? 10 : int.Parse(itensPorPagina));
+            ViewData["LivrosPorPagina"] = (string.IsNullOrEmpty(itensPorPagina) ? 10 : int.Parse(itensPorPagina));
             ViewData["PaginaAtual"] = (PaginaAtual != 0 ? PaginaAtual : 1);
 
 

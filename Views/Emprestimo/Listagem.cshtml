@@ -1,20 +1,24 @@
 @model ICollection<Emprestimo>
 @{
-    ViewData["Title"] = "Listagem de Empréstimos";
-    int FiltroPorPag = Int32.Parse(ViewData["empPorPagina"].ToString());
+    string Classe =  "";
+    int FiltroPorPag = Int32.Parse(ViewData["LivrosPorPagina"].ToString());
+
     int PaginaAtual = Int32.Parse(ViewData["PaginaAtual"].ToString());
+
+    //int NumLivrosPorPag = (Model.Count < FiltroPorPag ? Model.Count : FiltroPorPag);
+
+   //int NumTotalDePag = Model.Count/NumLivrosPorPag + (Model.Count%NumLivrosPorPag == 0 ? 0 : 1);
+
     int NumLivrosPorPag = Model.Count;
     int NumTotalDePag = 1;
-    @if(Model.Count !=0)
-    {
-        NumTotalDePag = Model.Count/NumLivrosPorPag + (Model.Count%NumLivrosPorPag==0 ? 0 :1);
-    }
-    else
-    {
-       NumTotalDePag = 1;
-    }
+
+    if(Model.Count > 0)
+{
+	NumLivrosPorPag = (Model.Count < FiltroPorPag ? Model.Count : FiltroPorPag);
+
+	NumTotalDePag = Model.Count/NumLivrosPorPag + (Model.Count%NumLivrosPorPag == 0 ? 0 : 1);
+}
     
-    string Classe =  "";
 }
 
 <div class="row">
@@ -25,6 +29,7 @@
                 <option value="Usuario">Usuário</option>
                 <option value="Livro">Livro</option>
             </select>
+
         </div>
         <div class="form-group mb-2 mx-sm-3">
             <input type="text" placeholder="Filtro" name="Filtro" class="form-control" />
@@ -43,6 +48,9 @@
             </div>
         
         <button type="submit" class="btn btn-primary mb-2">Pesquisar</button>
+
+
+        
     </form>
     </div>
 </div>
