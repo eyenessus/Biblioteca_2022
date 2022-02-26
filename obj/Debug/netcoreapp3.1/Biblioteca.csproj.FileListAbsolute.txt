@@ -55,3 +55,4 @@ C:\Users\nessu\Downloads\Biblioteca - netcore3.1\Biblioteca\obj\Debug\netcoreapp
 C:\Users\nessu\Downloads\Biblioteca - netcore3.1\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\ListaDeUsuario.cshtml.g.cs
 C:\Users\nessu\Downloads\Biblioteca - netcore3.1\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\RegistrarUsuarioS.cshtml.g.cs
 C:\Users\nessu\Downloads\Biblioteca - netcore3.1\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\EditarUsuario.cshtml.g.cs
+C:\Users\nessu\Downloads\Biblioteca - netcore3.1\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Emprestimo\Clone.cshtml.g.cs

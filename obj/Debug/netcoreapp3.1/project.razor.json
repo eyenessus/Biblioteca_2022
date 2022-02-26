@@ -14412,6 +14412,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Emprestimo\\Clone.cshtml",
+      "TargetPath": "Views\\Emprestimo\\Clone.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nessu\\Downloads\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Emprestimo\\Listagem.cshtml",
       "TargetPath": "Views\\Emprestimo\\Listagem.cshtml",
       "FileKind": "mvc"
